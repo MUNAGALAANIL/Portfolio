@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" > 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Anil Munagala</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb9ecbb5a4.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#'>Services</a></li>
+                <li><a href='#'>Portfolio</a></li>
+                <li><a href='#'>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>-*Web Developer*-</p>
+            <h1>Hi, I'm <span>Anil Munagala</span> <br>from Andhra Pradesh,India</h1>
+        </div>
+    </div>
+</div>
+<!---------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.jpg">
+            </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About <font color="red">M</font>e</h1>
+                <p>Greetings! I'm Anil Munagala, and I'm passionate about bringing digital dreams to life through web development. With a profound love for coding and a relentless drive for innovation, I've dedicated my career to crafting seamless online experiences.<br>I embarked on this exciting journey with a strong educational foundation. I graduated from <i><b>Kalasalingam Academy of Research and Education</b></i> with a degree in B Tech, which provided me with a solid grounding in computer science and programming principles.<br>"Transforming Code into Digital Dreams"</p>
+                <div class="tab-titles">
+                    <p class= "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class= "tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class= "tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li><span>UI/UX</span><br>Front-End Development</li>
+                    <li><span>java</span><br>Data Structures and Algorithms</li>
+                    <li><span>Python</span><br>Machine learning</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    <li><span>Internship</span><br>Front-End Development at Ecorfy pvt. LTD</li>
+                    <li><span>Student- KARE</span><br>Data Structures and Algorithms</li>
+                    <li><span>Projects</span><br>Machine Learning</li>
+                    <li><span>Finalist in National Enterprenuer Summit</span><br>EDII-Gujarat</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                    <li><span>2021-2025</span><br>UG in Kalasalingam University</li>
+                    <li><span>2021</span><br>Passed +2 with 98.3%</li>
+                    <li><span>2019</span><br>passed Schooling with 95%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------Services----->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pen"></i>
+                <h2>Web Design</h2>
+                <p>Web design is the art of creating visually appealing and user-friendly digital experiences that leave a lasting impression.Web designs make your bussiness far better. It was useful for Marketing your product.</p>
+                <a href='#'><u>learn more</u></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chalkboard"></i>
+                <h2>Machine Learning Projects</h2>
+                <p>I have a vast experience in building Machine learning projects, It is a branch of artificial intelligence that empowers computers to learn from data, recognize patterns, and make predictions or decisions without explicit programming.</p>
+                <a href='#'><u>learn more</u></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Tutor for Java/Python</h2>
+                <p>I will gudie you,How to learn python and java and problem solving. I will provide notes with clear Understanding.Hope you'll get in touch with me.</p>
+                <a href='#'><u>Know more</u></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------Portfolio------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>The website let you knows about a person or Organization.</p>
+                    <a href"#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Netflix clone</h3>
+                    <p>It is a Movie Streaming Website. You can explore various categories of movies.</p>
+                    <a href"#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Temperature Converter Website</h3>
+                    <p>This website will help you in converting temperature in different units.</p>
+                    <a href"#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab.links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+    
+</body>
+</html>
+
